@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order/Delivery Tracking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ADD8E6;
+            font-family: Arial, sans-serif;
+        }
+
+       .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+        }
+
+       .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+       .form-group label {
+            width: 200px;
+            font-weight: bold;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+       .form-group input,.form-group select {
+            width: 300px;
+        }
+
+       .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            align-content: center;
+        }
+
+       .btn-primary:hover {
+            background-color: #0062cc;
+            align-content: center;
+        }
+
+       .blue-header {
+            background-color: #007bff;
+            color: white;
+            height: 150px;
+            max-width: 800px;
+            align-items: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+       .blue-header.fas {
+            font-size: 2em;
+            color: white;
+        }
+
+       .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .ord{
+            font-weight: bold;
+            text-align: center;
+            color:#0CAFFF;
+            
+        }
+        .blu{
+            
+            
+            color:#0CAFFF;
+            
+        }
+        label{
+            color:#0CAFFF;
+            
+        }
+        .b{
+            border: none; /* Remove default border */
+            height: 2px; /* Set the height of the line */
+            background-color:#0CAFFF; /* Set the background color to blue */
+            margin: 20px 0;
+        }
+        .red-asterisk {
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    
+    
+    
+    <div class="container">
+        <div class="blue-header">
+            <i class="fas fa-map-marker-alt"></i>
+           
+            
+        </div>
+        
+        <h2 class="ord">Order/Delivery Tracking</h2>
+        <p class="ord">Trace your order</p>
+
+        <h4 class="blu ">Personal Information</h4>
+        <hr class="b">
+        <form class="mt-4">
+            <div class="form-group">
+                <label for="name" >Name <span class="red-asterisk">*</span></label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" >Email <span class="red-asterisk">*</span></label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-number">Contact number <span class="red-asterisk">*</span></label>
+                <input type="tel" id="contact-number" class="form-control" required>
+
+            </div>
+
+            <h4 class="blu">Order Information</h4>
+            <hr class="b">
+
+            <div class="form-group">
+                <label for="order-id">Order ID <span class="red-asterisk">*</span></label>
+                <input type="text" id="order-id" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery-destination">Delivery destination <span class="red-asterisk">*</span></label><br>
+                <input type="text" id="delivery-destination" class="form-control" required>
+            </div>
+           
+
+            <div class="form-group">
+                <label for="street-address">Street Address</label>
+                <input type="text" id="street-address" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="address-line-2">Address Line 2</label>
+                <input type="text" id="address-line-2" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City</label>
+                
+                <input type="text" id="city" class="form-control">
+                
+                
+            </div>
+        
+
+        
+            <div class="form-group">
+                <label for="state-region-province">State/Region/Province</label>
+                <select id="state-region-province" class="form-control">
+                    <option value="">-Select-</option>
+                </select>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="postal-zip-code">Postal/Zip Code</label>
+                <input type="text" id="postal-zip-code" class="form-control">
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" class="form-control">
+            </div>
+            
+
+            <div class="form-group">
+                <label for="order-date">When did you place your order? *</label>
+                <input type="date" id="order-date" class="form-control" required>
+            </div>
+
+            <div class="submit-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <p style="font-size: 12px; color: #999;">Please note that all fields marked with <span class="red-asterisk">*</span>are mandatory.</p>
+            <p style="font-size: 12px; color: #999;">By submitting this form, you agree to our terms and conditions.</p>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

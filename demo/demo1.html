@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#1560bd;
+        }
+      .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      .form-group {
+            margin-bottom: 20px;
+        }
+      .form-control {
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+      .btn {
+            background-color: #1560bd;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      .btn:hover {
+            background-color: red;
+        }
+        .fo{
+            text-decoration-thickness: 0.15em;
+        }
+        .reg{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color:#1560bd;
+        }
+        label{
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="reg">Registration</h2>
+        <h2></h2>
+        <hr>
+       <h6 class="fo">Personal Detail</h6>
+       <h1></h1>
+     
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="date" id="dateOfBirth" class="form-control" placeholder="Enter birth date">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-4" >
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" class="form-control" placeholder="Enter mobile number">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" class="form-control" placeholder="Enter occupation">
+            </div>
+        </div>
+        
+            <h6>Identify Details</h6>
+            <hr>
+            <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="idType">ID Type</label>
+                <select id="idType" class="form-control">
+                    <option value="">Select</option>
+                    <option value="passport">Passport</option>
+                    <option value="drivingLicense">Driving License</option>
+                    <option value="voterId">Voter ID</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="idNumber">ID Number</label>
+                <input type="text" id="idNumber" class="form-control" placeholder="Enter ID number">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="issueAuthority">Issue Authority</label>
+                <input type="text" id="issueAuthority" class="form-control" placeholder="Enter issue department">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="issueState">Issue State</label>
+                <input type="text" id="issueState" class="form-control" placeholder="Enter ID issue state">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="issueDate">Issue Date</label>
+                <input type="date" id="issueDate" class="form-control" placeholder="Enter ID issue date">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="date" id="expiryDate" class="form-control" placeholder="Enter ID expiry date">
+            </div>
+            </div>
+            <button type="submit" class="btn">Next →</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
